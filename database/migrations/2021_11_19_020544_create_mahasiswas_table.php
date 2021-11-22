@@ -20,6 +20,7 @@ class CreateMahasiswasTable extends Migration
             $table->date('tanggal_lahir');
             $table->decimal('ipk', 3, 2)->default(1.00);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
